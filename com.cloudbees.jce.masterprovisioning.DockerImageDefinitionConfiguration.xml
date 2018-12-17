@@ -1,0 +1,9 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.cloudbees.jce.masterprovisioning.DockerImageDefinitionConfiguration plugin="master-provisioning-core@2.2.4">
+  <images>
+    <com.cloudbees.jce.masterprovisioning.DockerImageDefinition>
+      <imageTag>cloudbees/cloudbees-core-mm:2.138.3.1</imageTag>
+      <name>CloudBees Core - Managed Master 2.138.3.1</name>
+    </com.cloudbees.jce.masterprovisioning.DockerImageDefinition>
+  </images>
+</com.cloudbees.jce.masterprovisioning.DockerImageDefinitionConfiguration>

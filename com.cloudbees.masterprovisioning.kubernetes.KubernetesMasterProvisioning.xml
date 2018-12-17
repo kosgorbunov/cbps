@@ -1,0 +1,22 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.cloudbees.masterprovisioning.kubernetes.KubernetesMasterProvisioning_-DescriptorImpl plugin="master-provisioning-kubernetes@2.2.4">
+  <clusterEndpoints>
+    <com.cloudbees.masterprovisioning.kubernetes.KubernetesClusterEndpoint>
+      <id>default</id>
+      <name>kubernetes</name>
+      <skipTlsVerify>false</skipTlsVerify>
+    </com.cloudbees.masterprovisioning.kubernetes.KubernetesClusterEndpoint>
+  </clusterEndpoints>
+  <javaOptions>-XshowSettings:vm -XX:MaxRAMFraction=1 -XX:+AlwaysPreTouch -XX:+UseG1GC -XX:+ExplicitGCInvokesConcurrent -XX:+ParallelRefProcEnabled -XX:+UseStringDeduplication -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=40m -Xloggc:$JENKINS_HOME/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintHeapAtGC -XX:+PrintGCCause -XX:+PrintTenuringDistribution -XX:+PrintReferenceGC -XX:+PrintAdaptiveSizePolicy -Dhudson.slaves.NodeProvisioner.initialDelay=0</javaOptions>
+  <jenkinsUrl>http://cjoc.cje.svc.cluster.local/cjoc</jenkinsUrl>
+  <disk>50</disk>
+  <memory>3072</memory>
+  <ratio>0.7</ratio>
+  <cpus>1.0</cpus>
+  <terminationGracePeriodSeconds>0</terminationGracePeriodSeconds>
+  <livenessInitialDelaySeconds>0</livenessInitialDelaySeconds>
+  <livenessPeriodSeconds>0</livenessPeriodSeconds>
+  <livenessTimeoutSeconds>0</livenessTimeoutSeconds>
+  <fsGroup>1000</fsGroup>
+  <storageClassName>ssd</storageClassName>
+</com.cloudbees.masterprovisioning.kubernetes.KubernetesMasterProvisioning_-DescriptorImpl>

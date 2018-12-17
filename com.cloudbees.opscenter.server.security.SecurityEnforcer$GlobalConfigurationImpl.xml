@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.cloudbees.opscenter.server.security.SecurityEnforcer_-GlobalConfigurationImpl plugin="operations-center-server@1.7.0">
+  <global class="com.cloudbees.opscenter.server.sso.SecurityEnforcerImpl" plugin="operations-center-sso@1.7.0">
+    <canOverride>false</canOverride>
+    <canCustomMapping>false</canCustomMapping>
+    <defaultMappingFactory class="com.cloudbees.opscenter.server.security.RestrictedEquivalentRAMF" plugin="operations-center-server@1.7.0"/>
+  </global>
+</com.cloudbees.opscenter.server.security.SecurityEnforcer_-GlobalConfigurationImpl>
